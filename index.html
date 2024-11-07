@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  .text-container {
+    display: inline-block;
+  }
+
+  .text-element {
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  /* Initially underline only the first element */
+  #parth {
+    border: 1px solid black;
+  }
+
+  /* Remove underline from the first element when any other element is hovered */
+  .text-container:hover #parth {
+    border: none;
+  }
+
+  /* Underline the hovered element */
+  .text-element:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+<p class="text-container">
+  <span  id="parth">Text 1</span>
+  <span class="text-element">Text 2</span>
+  <span class="text-element">Text 3</span>
+</p>
+
+</body>
+</html>
